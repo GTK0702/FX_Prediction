@@ -59,3 +59,6 @@ predict_df = predict_df.drop(labels = ["High"],axis = 1)
 predict_df = predict_df.drop(labels = ["Low"],axis = 1)
 predict_df = predict_df.drop(labels = ["Open"],axis = 1)
 predict_df.plot()
+grapf = predict_df.plot()
+
+grapf.figure.savefig('output.png')
